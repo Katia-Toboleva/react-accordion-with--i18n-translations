@@ -1,0 +1,55 @@
+.text {
+  font-family: 'Noto Sans JP', sans-serif;
+
+  &--size-xsmall {
+    font-size: 14px;
+  }
+
+  &--size-small {
+    font-size: 16px;
+  }
+
+  &--size-medium {
+    font-size: 18px;
+  }
+
+  &--size-medium-large {
+    font-size: 24px;
+  }
+
+  &--size-large {
+    font-size: 32px;
+  }
+
+  &--size-xlarge {
+    font-size: 48px;
+  }
+
+  &--weight-light {
+    font-weight: 300;
+  }
+
+  &--weight-regular {
+    font-weight: 400;
+  }
+
+  &--weight-medium {
+    font-weight: 500;
+  }
+
+  &--weight-bold {
+    font-weight: 700;
+  }
+
+  &--weight-black {
+    font-weight: 900;
+  }
+
+  &--transform-uppercase {
+    text-transform: uppercase;
+  }
+
+  &--transform-capitalize {
+    text-transform: capitalize;
+  }
+}
