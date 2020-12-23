@@ -1,5 +1,1 @@
-// import icon from './icon.svg';
-
-// export {
-
-// };
+export { default as plus } from './plus.svg';
