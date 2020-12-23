@@ -1,17 +1,49 @@
-// .icon {
-//   margin-right: 5px;
+.icon {
+  background-color: transparent;
+  transition: all 300ms ease-out;
 
-//   &--theme-bright {
-//     svg {
-//       fill: rgb(255, 255, 255);
-//       width: 30px;
-//     }
-//   }
+  i {
+    position: relative;
+    display: block;
+    background-color: transparent;
+  }
 
-//   &--theme-brick {
-//     svg {
-//       fill: rgb(53, 0, 9);
-//       width: 30px;
-//     }
-//   }
-// }
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
+
+  &--theme-white {
+    svg {
+      fill: rgb(219, 219, 219);
+    }
+  }
+
+  &--size-small {
+    i {
+      width: 25px;
+      height: 25px;
+    }
+
+    svg {
+      width: 25px;
+    }
+  }
+
+  &--size-medium {
+    i {
+      width: 45px;
+      height: 45px;
+    }
+
+    svg {
+      width: 45px;
+    }
+  }
+
+  &--is-opened {
+    transform: rotate(45deg);
+  }
+}
