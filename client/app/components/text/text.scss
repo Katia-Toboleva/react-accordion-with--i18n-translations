@@ -1,5 +1,6 @@
 .text {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Assistant', sans-serif;
+  background-color: inherit;
 
   &--size-xsmall {
     font-size: 14px;
@@ -10,19 +11,11 @@
   }
 
   &--size-medium {
-    font-size: 18px;
-  }
-
-  &--size-medium-large {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   &--size-large {
-    font-size: 32px;
-  }
-
-  &--size-xlarge {
-    font-size: 48px;
+    font-size: 30px;
   }
 
   &--weight-light {
@@ -41,15 +34,15 @@
     font-weight: 700;
   }
 
-  &--weight-black {
-    font-weight: 900;
-  }
-
   &--transform-uppercase {
     text-transform: uppercase;
   }
 
   &--transform-capitalize {
     text-transform: capitalize;
+  }
+
+  &--dark-grey {
+    color: rgb(48, 48, 48);
   }
 }
