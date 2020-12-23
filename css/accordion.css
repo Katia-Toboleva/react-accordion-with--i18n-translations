@@ -1,0 +1,12 @@
+.accordion-container {
+  margin: 30px auto;
+  width: 50%;
+}
+
+.accordion {
+  margin-top: 20px;
+}
+
+.accordion > :not(:last-of-type) {
+  margin-bottom: 10px;
+}

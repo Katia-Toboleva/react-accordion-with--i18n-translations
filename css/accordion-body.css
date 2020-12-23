@@ -1,0 +1,10 @@
+.accordion-body {
+  height: 0;
+  overflow: hidden;
+}
+
+.accordion-body__content {
+  padding: 15px 20px;
+  background-color: whitesmoke;
+  opacity: 1;
+}

@@ -1,0 +1,20 @@
+.grid-item {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+.grid-item--grow {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.grid-item--shrink {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}

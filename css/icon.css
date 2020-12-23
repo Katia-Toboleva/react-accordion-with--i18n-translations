@@ -1,0 +1,45 @@
+.icon {
+  background-color: transparent;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.icon i {
+  position: relative;
+  display: block;
+  background-color: transparent;
+}
+
+.icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+.icon--theme-white svg {
+  fill: #dbdbdb;
+}
+
+.icon--size-small i {
+  width: 25px;
+  height: 25px;
+}
+
+.icon--size-small svg {
+  width: 25px;
+}
+
+.icon--size-medium i {
+  width: 45px;
+  height: 45px;
+}
+
+.icon--size-medium svg {
+  width: 45px;
+}
+
+.icon--is-opened {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
