@@ -28,6 +28,7 @@
 
 .icon--size-small svg {
   width: 25px;
+  height: 25px;
 }
 
 .icon--size-medium i {
@@ -37,6 +38,7 @@
 
 .icon--size-medium svg {
   width: 45px;
+  height: 45px;
 }
 
 .icon--is-opened {
