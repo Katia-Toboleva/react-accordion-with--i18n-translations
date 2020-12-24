@@ -1,10 +1,18 @@
 .accordion-body {
-  height: 0;
   overflow: hidden;
+  height: 0;
+  opacity: 0;
+  -webkit-transition-property: height opacity;
+  transition-property: height opacity;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .accordion-body__content {
-  padding: 15px 20px;
+  padding: 20px 30px;
   background-color: whitesmoke;
+}
+
+.accordion-body--active {
   opacity: 1;
 }
