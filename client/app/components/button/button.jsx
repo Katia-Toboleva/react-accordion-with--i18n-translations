@@ -1,83 +1,30 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 import classnames from 'classnames/bind';
 import styles from './button.scss';
-import { Row, Column } from '../grid';
-import Icon from '../icon';
 
 const cx = classnames.bind(styles);
 
-class Button extends React.Component {
-  constructor(props) {
-    super(props);
+const Button = ({ language }) => {
+  const [ active, setActive ] = useState(false);
 
-    this.state = {
-      active: false,
-    };
+  const handleMouseEnter = () => {
+    setActive(true);
   }
 
-  handleMouseEnter() {
-    const { active } = this.state;
-
-    this.setState({
-      active: !active,
-    });
+  const handleMouseLeave = () => {
+    setActive(false);
   }
 
-  handleMouseLeave() {
-    const { active } = this.state;
-
-    this.setState({
-      active: !active,
-    });
-  }
-
-  render() {
-    const {
-      text, theme, icon,
-    } = this.props;
-
-    const { active } = this.state;
-
-    return (
-      <div
-        className={cx('button', {
-          'button--active': active,
-          [`button--${theme}`]: theme,
-        })}
-        onMouseEnter={() => { this.handleMouseEnter(); }}
-        onMouseLeave={() => { this.handleMouseLeave(); }}
-      >
-        <Row>
-          <Column>
-            <div className={styles.button__icon}>
-              <Icon
-                icon={icon}
-                theme={active
-                  ? 'bright'
-                  : 'brick'}
-              />
-            </div>
-          </Column>
-
-          <Column>
-            <div className={styles.button__text}>
-              <span>
-                {text}
-              </span>
-            </div>
-          </Column>
-        </Row>
-      </div>
-    );
-  }
-}
-
-
-Button.propTypes = {
-  text: PropTypes.string,
-  theme: PropTypes.string,
-  icon: PropTypes.string,
+  return (
+    <div
+      className={cx('button', {
+        'button--active': active,
+        [`button--${language}`]: language,
+      })}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    />
+  );
 };
 
 export default Button;
