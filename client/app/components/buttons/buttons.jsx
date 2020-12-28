@@ -5,12 +5,10 @@ import { Row, Column } from '../grid';
 
 const Buttons = ({ languages }) => (
   <div className={styles.buttons}>
-    <Row>
+    <Row gutters="small">
       {languages.map(item => (
         <Column key={item.id} >
-          <Button
-          // language={item.language}
-           />
+          <Button language={item.language} flag={item.image} />
         </Column>
       ))}
     </Row>

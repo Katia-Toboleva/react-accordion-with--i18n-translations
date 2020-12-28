@@ -4,7 +4,7 @@ import styles from './button.scss';
 
 const cx = classnames.bind(styles);
 
-const Button = ({ language }) => {
+const Button = ({ language, flag }) => {
   const [ active, setActive ] = useState(false);
 
   const handleMouseEnter = () => {
@@ -23,6 +23,7 @@ const Button = ({ language }) => {
       })}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      style={{backgroundImage: `url(${flag})`}}
     />
   );
 };
