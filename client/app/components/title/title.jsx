@@ -9,9 +9,8 @@ const Title = () => (
         theme="dark-grey"
         weight="bold"
         transform="capitalize"
-      >
-        frequently asked questions
-      </Text>
+        translation={'main.title'}
+    />
   </div>
 
 );
