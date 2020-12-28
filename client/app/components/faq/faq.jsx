@@ -1,5 +1,5 @@
 import React from 'react';
-import sections from '../mocks/sections';
+import defaultContent from '../../translations/locales/en-GB';
 import languages from '../mocks/languages'
 import styles from './faq.scss';
 
@@ -18,7 +18,7 @@ const Faq = () => (
         <Buttons languages={languages} />
       </Column>
     </Row>
-    <Accordion sections={sections} />
+    <Accordion sections={defaultContent.main.sections} />
   </div>
 
 );
