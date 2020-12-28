@@ -9,8 +9,11 @@
     flex-direction: row;
   }
 
-  &--center {
+  &--align-center {
     align-items: center;
+  }
+
+  &--justify-center {
     justify-content: center;
   }
 

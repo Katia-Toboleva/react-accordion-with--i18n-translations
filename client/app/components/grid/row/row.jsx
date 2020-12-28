@@ -9,7 +9,8 @@ const Row = (props) => {
   const {
     direction,
     children,
-    center,
+    alignCenter,
+    justifyCenter,
     gutters,
   } = props;
 
@@ -17,7 +18,8 @@ const Row = (props) => {
     <div
       className={cx('grid', {
         [`grid--${direction}`]: direction,
-        'grid--center': center,
+        'grid--align-center': alignCenter,
+        'grid--justify-center': justifyCenter,
         [`grid--gutters-${gutters}`]: gutters,
       })}
     >
