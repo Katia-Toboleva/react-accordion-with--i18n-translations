@@ -6,13 +6,13 @@ export default {
         id: 0,
         title: 'Where are you based?',
         body:
-          'We love our neighbourhood and hope you will too. Holborn is minutes from Covent Garden, the British Museum and Oxford Street, and so much more. We are close to University College London; Central St Martins; Birkbeck, University of London; the University of Westminster and, of course, the London School of Economics.'
+          'We love our neighbourhood and hope you will too. Holborn is minutes from Covent Garden, the British Museum and Oxford Street, and so much more.'
       },
       {
         id: 1,
         title: 'How to book a course?',
         body:
-          'Our dedicated student services and sales team are on hand every step of the way to ensure you make the most informed decision of the course that best suits your needs and academic or professional goals. The quickest and simplest way to book is online using our website www.bookbookbook.com. Here you will find our current courses and up-to-date promotions.',
+          'The quickest and simplest way to book is online using our website www.bookbookbook.com. Here you will find our current courses and up-to-date promotions.',
       },
       {
         id: 2,

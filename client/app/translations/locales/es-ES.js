@@ -6,13 +6,13 @@ export default {
         id: 0,
         title: '¿Cuál es vuestra ubicación?',
         body:
-          'Nos encanta nuestro barrio y esperamos que a ti también. Holborn está unos minutos de Covent Garden, el British Museum, Oxford Street y mucho más. Estamos cerca de la University College de Londres, Central St Martins, Birkbeck, Universidad de Londres, la Universidad de Westminster y, por supuesto, la London School of Economics.'
+          'Nos encanta nuestro barrio y esperamos que a ti también. Holborn está unos minutos de Covent Garden, el British Museum, Oxford Street y mucho más.'
       },
       {
         id: 1,
         title: '¿Cómo se puede reservar un curso?',
         body:
-          'Nuestro dedicado servicio de estudiantes y equipo de ventas, estará pendiente durante el proceso de matriculación para asegurarnos de que tomes la mejor decisión respecto al curso que más encaje a tus necesidades académicas a tus objetivos profesionales. La forma más rápida y sencilla de hacer tu reserva es a través de nuestra página web www.bookbookbook.com. Aquí encontrarás todos nuestros cursos y promociones.',
+          'La forma más rápida y sencilla de hacer tu reserva es a través de nuestra página web www.bookbookbook.com. Aquí encontrarás todos nuestros cursos y promociones.',
       },
       {
         id: 2,
