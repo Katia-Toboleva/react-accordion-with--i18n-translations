@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useRef } from 'react';
 import classnames from 'classnames/bind';
 import styles from './accordion-body.scss';
+import Text from '../../../text';
 
 const cx = classnames.bind(styles);
 
@@ -21,7 +22,7 @@ const AccordionBody = ({ isOpened, body }) => {
     style={getBodyStyle(height, isOpened)}
   >
     <div ref={refBody} className={styles['accordion-body__content']}>
-      {body}
+      <Text size="small" weight="regular">{body}</Text>
     </div>
   </div>
 )}
