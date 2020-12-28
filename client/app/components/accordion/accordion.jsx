@@ -2,9 +2,11 @@ import React, {useState} from 'react';
 import styles from './accordion.scss';
 import AccordionHeader from './subcomponents/accordion-header';
 import AccordionBody from './subcomponents/accordion-body';
+import { useTranslation } from 'react-i18next';
 
 const Accordion = ({ sections }) => {
   const [selected, setSelected] = useState([]);
+  const { t } = useTranslation();
 
   const handleAccordionHeaderClick = (id) => {
     const sectionIndex = selected.findIndex(item => item === id);
@@ -26,19 +28,19 @@ const Accordion = ({ sections }) => {
   return (
     <div className={styles['accordion-container']}>
       <div className={styles.accordion}>
-        {sections.map(section => {
+        {sections.map((section, index) => {
           const isOpened = selected.includes(section.id)
           return (
           <div key={section.id}>
             <AccordionHeader
               id={section.id}
-              title={section.title}
+              title={t(`main.sections.${index}.title`)}
               onClick={handleAccordionHeaderClick}
               isOpened={isOpened}
             />
             <AccordionBody
               isOpened={isOpened}
-              body={section.body}
+              body={t(`main.sections.${index}.body`)}
             />
           </div>
         )})}
