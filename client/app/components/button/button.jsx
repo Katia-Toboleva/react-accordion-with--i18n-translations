@@ -4,26 +4,32 @@ import styles from './button.scss';
 
 const cx = classnames.bind(styles);
 
-const Button = ({ language, flag }) => {
-  const [ active, setActive ] = useState(false);
+const Button = ({ active, language, flag, onClick }) => {
+  const [ isHovered, setHovered ] = useState(false);
 
   const handleMouseEnter = () => {
-    setActive(true);
+    setHovered(true);
   }
 
   const handleMouseLeave = () => {
-    setActive(false);
+    setHovered(false);
+  }
+
+  const handleButtonClick = () => {
+    onClick(language)
   }
 
   return (
     <div
       className={cx('button', {
         'button--active': active,
+        'button--hovered': isHovered,
         [`button--${language}`]: language,
       })}
+      style={{backgroundImage: `url(${flag})`}}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      style={{backgroundImage: `url(${flag})`}}
+      onClick={handleButtonClick}
     />
   );
 };
