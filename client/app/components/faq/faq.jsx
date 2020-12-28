@@ -10,7 +10,7 @@ import Accordion from '../accordion';
 
 const Faq = () => (
   <div className={styles.faq}>
-    <Row>
+    <Row alignCenter>
       <Column grow>
         <Title />
       </Column>
