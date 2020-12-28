@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames/bind';
-import * as icons from './svg';
+import * as icons from './icons';
 import styles from './icon.scss';
 
 const cx = classnames.bind(styles);
