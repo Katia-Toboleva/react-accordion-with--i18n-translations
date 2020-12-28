@@ -3,7 +3,6 @@ import styles from './accordion-header.scss';
 import Text from '../../../text';
 import Icon from '../../../icon';
 
-
 const AccordionHeader = ({ id, title, onClick, isOpened }) => {
   const handleClick = () => {
     onClick(id);
