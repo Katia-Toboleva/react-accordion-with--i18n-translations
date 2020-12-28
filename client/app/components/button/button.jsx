@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import classnames from 'classnames/bind';
+import { useTranslation } from 'react-i18next';
 import styles from './button.scss';
 
 const cx = classnames.bind(styles);
 
 const Button = ({ active, language, flag, onClick }) => {
   const [ isHovered, setHovered ] = useState(false);
+  const { t, i18n } = useTranslation();
 
   const handleMouseEnter = () => {
     setHovered(true);
@@ -16,7 +18,8 @@ const Button = ({ active, language, flag, onClick }) => {
   }
 
   const handleButtonClick = () => {
-    onClick(language)
+    onClick(language);
+    i18n.changeLanguage(language);
   }
 
   return (
