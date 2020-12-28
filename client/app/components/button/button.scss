@@ -7,21 +7,10 @@
   background-repeat: no-repeat;
   scale: 1;
   transition: transform 200ms ease-in-out;
-
-  &--en {
-
-  }
-
-  &--es {
-    // background-color: yellow;
-  }
-
-  &--ru {
-    // background-color: blue;
-  }
+  opacity: 0.5;
 
   &--active {
-
+    opacity: 1;
   }
 
   &:active {
