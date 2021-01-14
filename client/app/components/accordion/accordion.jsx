@@ -34,13 +34,13 @@ const Accordion = ({ sections }) => {
           <div key={section.id}>
             <AccordionHeader
               id={section.id}
-              title={t(`main.sections.${index}.title`)}
+              title={`main.sections.${index}.title`}
               onClick={handleAccordionHeaderClick}
               isOpened={isOpened}
             />
             <AccordionBody
               isOpened={isOpened}
-              body={t(`main.sections.${index}.body`)}
+              body={`main.sections.${index}.body`}
             />
           </div>
         )})}
