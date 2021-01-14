@@ -22,7 +22,7 @@ const AccordionBody = ({ isOpened, body }) => {
     style={getBodyStyle(height, isOpened)}
   >
     <div ref={refBody} className={styles['accordion-body__content']}>
-      <Text size="small" weight="regular">{body}</Text>
+      <Text size="small" weight="regular" translation={body} />
     </div>
   </div>
 )}
