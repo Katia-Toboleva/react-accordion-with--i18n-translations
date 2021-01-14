@@ -1,4 +1,4 @@
-## FAQ-accordion with React Hooks and i18n Internationalization
+## FAQ-accordion with React Hooks and i18n Internationalization.
 
 ### Description: 
 FAQ accordion that supports 3 languages: English, Russian and Spanish. 
