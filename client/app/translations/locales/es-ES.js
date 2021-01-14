@@ -6,7 +6,7 @@ export default {
         id: 0,
         title: '¿Cuál es vuestra ubicación?',
         body:
-          'Nos encanta nuestro barrio y esperamos que a ti también. Holborn está unos minutos de Covent Garden, el British Museum, Oxford Street y mucho más.'
+          'Nos encanta nuestro barrio y esperamos que a ti también. Bloomsbury está unos minutos de Covent Garden, el British Museum, Oxford Street y mucho más.'
       },
       {
         id: 1,

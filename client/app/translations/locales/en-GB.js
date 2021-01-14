@@ -6,13 +6,13 @@ export default {
         id: 0,
         title: 'Where are you based?',
         body:
-          'We love our neighbourhood and hope you will too. Holborn is minutes from Covent Garden, the British Museum and Oxford Street, and so much more.'
+          'We love our neighbourhood and hope you will too. Bloomsbury is minutes away from Covent Garden, the British Museum and Oxford Street, and so much more.'
       },
       {
         id: 1,
         title: 'How to book a course?',
         body:
-          'The quickest and simplest way to book is online using our website www.bookbookbook.com. Here you will find our current courses and up-to-date promotions.',
+          `The quickest and simplest way to book is online using our website <a href='#'> www.bookbookbook.com </a>. Here you will find our current courses and up-to-date promotions.`,
       },
       {
         id: 2,
