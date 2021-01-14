@@ -10,7 +10,7 @@ const AccordionHeader = ({ id, title, onClick, isOpened }) => {
 
   return (
     <div className={styles['accordion-header']} onClick={handleClick}>
-      <Text size="medium" weight="medium">{title}</Text>
+      <Text size="medium" weight="medium" translation={title} />
       <Icon icon="plus" isOpened={isOpened} size="small" theme="white" />
     </div>
   )
